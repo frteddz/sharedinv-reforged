@@ -39,4 +39,4 @@ Shared code lives in `common/src`. Forge and NeoForge glue lives in their own fo
 
 ## Credits
 
-Original mod by Redstoned: https://github.com/red-stoned/sharedinv and https://modrinth.com/mod/sharedinv. Credit to Galiano and Kroojel. Port by T3ddz.
+Original mod made by the [Redstoned](https://modrinth.com/organization/redstoned) ogranization: https://github.com/red-stoned/sharedinv and https://modrinth.com/mod/sharedinv. Credit to Galiano and Kroojel. Port by T3ddz.
