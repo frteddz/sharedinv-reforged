@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+base.archivesName = "${mod_id}-${minecraft_version}-neoforge"
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+sourceSets.main.java.srcDir file('../common/src/main/java')
+sourceSets.main.resources.srcDir file('../common/src/main/resources')
+
+neoForge {
+    version = neo_version
+
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+tasks.named('processResources', ProcessResources).configure {
+    var replaceProperties = [
+            mod_id      : mod_id,
+            mod_name    : mod_name,
+            mod_version : mod_version,
+            mod_authors : mod_authors,
+            neo_version : neo_version,
+            minecraft_version_range: "[${minecraft_version},1.22)"
+    ]
+    inputs.properties replaceProperties
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand replaceProperties
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+}

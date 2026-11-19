@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.t3ddz.sharedinv_reforged.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MinecraftServerAccessor",
+    "PlayerDataStorageMixin",
+    "PlayerInventoryMixin",
+    "PlayerManagerMixin",
+    "ServerPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
