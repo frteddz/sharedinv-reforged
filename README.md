@@ -1,19 +1,21 @@
+![Hero](https://cdn.modrinth.com/data/cached_images/c0af32a5f2691cddafd06393b7884c596de37018.png)
+
+<div align="center">
+
+[![Ko-fi](https://raw.githubusercontent.com/frteddz/pixel-icons-library-/main/96x/kofi_icon_bg.png)](https://ko-fi.com/majdsafi)
+[![Modrinth](https://raw.githubusercontent.com/frteddz/pixel-icons-library-/main/96x/modrinth_icon_bg.png)](https://modrinth.com/user/teddz)
+[![Github](https://raw.githubusercontent.com/frteddz/pixel-icons-library-/main/96x/github_icon_bg.png)](https://github.com/frteddz)
+[![CurseForge](https://raw.githubusercontent.com/frteddz/pixel-icons-library-/main/96x/cruseforge_icon_bg.png)](https://www.curseforge.com/members/teddz/)
+
+</div>
+
 # SharedInv Reforged
 
-Unofficial port of SharedInv for Forge and NeoForge. Original mod by Redstoned and MIT licensed.
-
-Players in the same group share one inventory, hotbar, armor and offhand slot. Nobody needs the mod on the client. State is saved to `sharedinv.nbt` in the world folder.
-
-This first release targets Minecraft 1.21.1 only. There are two jars:
-
-- `sharedinv_reforged-1.21.1-forge-1.0.0.jar` for Forge 1.21.1
-- `sharedinv_reforged-1.21.1-neoforge-1.0.0.jar` for NeoForge 1.21.1
-
-Use the jar for your loader. Do not put both in the same mods folder.
+Unofficial port of SharedInv for Forge and NeoForge. Players in the same named group share one inventory, hotbar, armor and offhand slot. Nobody needs the mod on the client, and state is saved to `sharedinv.nbt` in the world folder
 
 ## Commands
 
-All commands need permission level 2 and start with `/sharedinv`.
+All commands need to be ran by an OP (_Operator_) and start with `/sharedinv`
 
 - `help` links to the original mod page
 - `group add <name>`
@@ -25,18 +27,8 @@ All commands need permission level 2 and start with `/sharedinv`.
 - `group default get`
 - `group default clear`
 
-## Building
-
-You need Java 21. The Gradle wrapper is pinned to Gradle 8.11 because ForgeGradle does not support Gradle 9.
-
-```shell
-./gradlew buildAll
-```
-
-The jars end up in `forge/build/libs` and `neoforge/build/libs`.
-
-Shared code lives in `common/src`. Forge and NeoForge glue lives in their own folders. Both modules compile the shared sources with Mojang mappings.
-
 ## Credits
 
-Original mod made by the [Redstoned](https://modrinth.com/organization/redstoned) ogranization: https://github.com/red-stoned/sharedinv and https://modrinth.com/mod/sharedinv. Credit to Galiano and Kroojel. Port by T3ddz.
+Original mod made by the [Redstoned](https://modrinth.com/organization/redstoned) ogranization. Source: [GitHub](https://github.com/red-stoned/sharedinv). Modrinth page: [SharedInv](https://modrinth.com/mod/sharedinv). Credit to [Galiano](https://github.com/activepass), [Kroojel](https://github.com/Kroojel) and [JFronny](https://github.com/JFronny). <u>[Port by T3ddz](https://modrinth.com/user/Teddz)<u/>
+
+[MIT licensed ](https://github.com/frteddz/sharedinv-reforged#MIT-1-ov-file)
